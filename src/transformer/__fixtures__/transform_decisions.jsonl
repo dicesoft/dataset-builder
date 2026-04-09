@@ -1,0 +1,5 @@
+{"recordId":"asset_0","stage":"filter","action":"keep","reason":"passed_all_filters","timestamp":"2026-04-07T19:51:39.721Z"}
+{"recordId":"asset_1","stage":"filter","action":"keep","reason":"passed_all_filters","timestamp":"2026-04-07T19:51:39.721Z"}
+{"recordId":"asset_2","stage":"filter","action":"keep","reason":"passed_all_filters","timestamp":"2026-04-07T19:51:39.721Z"}
+{"recordId":"asset_3","stage":"filter","action":"drop","reason":"junk_pattern_matched","details":{"fileName":"icon.svg"},"timestamp":"2026-04-07T19:51:39.721Z"}
+{"recordId":"asset_4","stage":"filter","action":"drop","reason":"failed_status: failed","details":{"status":"failed"},"timestamp":"2026-04-07T19:51:39.721Z"}

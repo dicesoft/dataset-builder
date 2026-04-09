@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Pipeline name"
+    },
+    "steps": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Human-readable step name"
+              },
+              "type": {
+                "type": "string",
+                "const": "scrape"
+              },
+              "options": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "description": "URL to scrape"
+                  },
+                  "spider": {
+                    "default": "basic",
+                    "description": "Spider type to use",
+                    "type": "string"
+                  },
+                  "output": {
+                    "default": "json",
+                    "description": "Output format",
+                    "type": "string",
+                    "enum": ["json", "jsonl", "csv", "xml"]
+                  },
+                  "depth": {
+                    "default": 1,
+                    "description": "Crawl depth",
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "settings": {
+                    "description": "Custom Scrapy settings string",
+                    "type": "string"
+                  },
+                  "engine": {
+                    "default": "scrapy",
+                    "description": "Scraping engine",
+                    "type": "string"
+                  }
+                },
+                "required": ["url", "spider", "output", "depth", "engine"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["name", "type", "options"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Human-readable step name"
+              },
+              "type": {
+                "type": "string",
+                "const": "generate"
+              },
+              "options": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "default": "person",
+                    "description": "Type of synthetic data to generate",
+                    "type": "string"
+                  },
+                  "count": {
+                    "default": 10,
+                    "description": "Number of records to generate",
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "locale": {
+                    "default": "en",
+                    "description": "Locale for fake data generation",
+                    "type": "string"
+                  }
+                },
+                "required": ["type", "count", "locale"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["name", "type", "options"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Human-readable step name"
+              },
+              "type": {
+                "type": "string",
+                "const": "import"
+              },
+              "options": {
+                "type": "object",
+                "properties": {
+                  "filePath": {
+                    "type": "string",
+                    "description": "Path to file to import"
+                  },
+                  "type": {
+                    "description": "File type override (csv, json, xml, etc.)",
+                    "type": "string"
+                  },
+                  "encoding": {
+                    "default": "utf-8",
+                    "description": "File encoding",
+                    "type": "string"
+                  },
+                  "delimiter": {
+                    "default": ",",
+                    "description": "CSV delimiter character",
+                    "type": "string"
+                  }
+                },
+                "required": ["filePath", "encoding", "delimiter"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["name", "type", "options"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Human-readable step name"
+              },
+              "type": {
+                "type": "string",
+                "const": "clean"
+              },
+              "options": {
+                "type": "object",
+                "properties": {
+                  "dedupe": {
+                    "default": false,
+                    "description": "Remove duplicate records",
+                    "type": "boolean"
+                  },
+                  "trim": {
+                    "default": true,
+                    "description": "Trim whitespace from string values",
+                    "type": "boolean"
+                  },
+                  "lowercase": {
+                    "default": false,
+                    "description": "Convert string values to lowercase",
+                    "type": "boolean"
+                  },
+                  "removeEmpty": {
+                    "default": true,
+                    "description": "Remove empty/null records",
+                    "type": "boolean"
+                  },
+                  "normalizeNewlines": {
+                    "default": true,
+                    "description": "Normalize newline characters",
+                    "type": "boolean"
+                  }
+                },
+                "required": ["dedupe", "trim", "lowercase", "removeEmpty", "normalizeNewlines"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["name", "type", "options"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Human-readable step name"
+              },
+              "type": {
+                "type": "string",
+                "const": "export"
+              },
+              "options": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "description": "Input file path (uses pipeline data if omitted)",
+                    "type": "string"
+                  },
+                  "output": {
+                    "type": "string",
+                    "description": "Output file path"
+                  },
+                  "format": {
+                    "default": "json",
+                    "description": "Export format",
+                    "type": "string",
+                    "enum": ["json", "jsonl", "csv"]
+                  },
+                  "pretty": {
+                    "default": false,
+                    "description": "Pretty-print JSON output",
+                    "type": "boolean"
+                  },
+                  "flatten": {
+                    "default": false,
+                    "description": "Flatten nested objects",
+                    "type": "boolean"
+                  }
+                },
+                "required": ["output", "format", "pretty", "flatten"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["name", "type", "options"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Human-readable step name"
+              },
+              "type": {
+                "type": "string",
+                "const": "format"
+              },
+              "options": {
+                "type": "object",
+                "properties": {
+                  "input": {
+                    "description": "Input file path (uses pipeline data if omitted)",
+                    "type": "string"
+                  },
+                  "outputDir": {
+                    "type": "string",
+                    "description": "Output directory"
+                  },
+                  "formatter": {
+                    "type": "string",
+                    "description": "Formatter name (alpaca, chatml, sharegpt, etc.)"
+                  },
+                  "fieldMap": {
+                    "default": {},
+                    "description": "Field mapping from source to target",
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "splitRatios": {
+                    "description": "Train/val/test split ratios",
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "seed": {
+                    "default": 42,
+                    "description": "Random seed for reproducible splits",
+                    "type": "number"
+                  },
+                  "systemPrompt": {
+                    "description": "System prompt for chat formats",
+                    "type": "string"
+                  },
+                  "datasetName": {
+                    "description": "Dataset name for metadata",
+                    "type": "string"
+                  }
+                },
+                "required": ["outputDir", "formatter", "fieldMap", "seed"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["name", "type", "options"],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "description": "Ordered list of pipeline steps"
+    }
+  },
+  "required": ["name", "steps"],
+  "additionalProperties": false
+}

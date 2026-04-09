@@ -1,0 +1,162 @@
+[
+  {
+    "instruction": "What is AI?",
+    "output": "Artificial Intelligence is the simulation of human intelligence by machines.",
+    "url": "https://example.com/ai"
+  },
+  {
+    "instruction": "What is AI?",
+    "output": "Artificial Intelligence is the simulation of human intelligence by machines.",
+    "url": "https://example.com/ai"
+  },
+  {
+    "instruction": "Explain ML",
+    "output": "Machine Learning is a subset of AI.",
+    "url": "https://example.com/ml"
+  },
+  {
+    "instruction": "Explain ML",
+    "output": "Machine learning is a subset of artificial intelligence.",
+    "url": "https://example.com/ml?ref=home"
+  },
+  { "instruction": "", "output": "This has no instruction", "url": "https://example.com/empty" },
+  { "instruction": "No output here", "output": "", "url": "https://example.com/noout" },
+  { "instruction": null, "output": null, "url": null },
+  { "instruction": "a", "output": "b" },
+  {
+    "instruction": "What is deep learning?",
+    "output": "Deep learning uses neural networks with many layers to learn complex patterns from large amounts of data, enabling tasks like image recognition and natural language processing.",
+    "url": "https://example.com/dl",
+    "email": "test@example.com",
+    "date": "2025-01-15",
+    "score": 85
+  },
+  {
+    "instruction": "Define NLP",
+    "output": "NLP stands for Natural Language Processing, a field of AI.",
+    "url": "https://example.com/nlp",
+    "email": "user@test.org",
+    "date": "2024-06-20",
+    "score": 72
+  },
+  {
+    "instruction": "What are transformers?",
+    "output": "Transformers are a type of neural network architecture that uses self-attention mechanisms to process sequential data in parallel.",
+    "url": "https://example.com/transformers",
+    "email": "info@ai.com",
+    "date": "2025-03-10",
+    "score": 90
+  },
+  {
+    "instruction": "Explain CNNs",
+    "output": "Convolutional Neural Networks are specialized for processing grid-like data such as images.",
+    "url": "https://example.com/cnn",
+    "email": "invalid-email",
+    "date": "not-a-date",
+    "score": 65
+  },
+  {
+    "instruction": "What is Python?",
+    "output": "Python is a high-level programming language known for its readability.",
+    "url": "invalid-url",
+    "email": "dev@python.org",
+    "date": "2024-12-01",
+    "score": 95
+  },
+  {
+    "instruction": "Describe RNNs",
+    "output": "Recurrent Neural Networks process sequential data by maintaining hidden states.",
+    "url": "https://example.com/rnn",
+    "score": 78
+  },
+  {
+    "instruction": "What is TensorFlow?",
+    "output": "TensorFlow is an open-source ML framework developed by Google.",
+    "url": "https://example.com/tf",
+    "score": 88
+  },
+  {
+    "instruction": "Explain PyTorch",
+    "output": "PyTorch is a deep learning framework known for its dynamic computation graphs.",
+    "url": "https://example.com/pytorch",
+    "score": 92
+  },
+  {
+    "instruction": "What is a loss function?",
+    "output": "A loss function measures how well a model's predictions match the expected output.",
+    "url": "https://example.com/loss",
+    "score": 70
+  },
+  {
+    "instruction": "Define epoch",
+    "output": "An epoch is one complete pass through the entire training dataset.",
+    "url": "https://example.com/epoch",
+    "score": 55
+  },
+  {
+    "instruction": "What is batch size?",
+    "output": "Batch size is the number of training examples used in one iteration.",
+    "url": "https://example.com/batch",
+    "score": 60
+  },
+  {
+    "instruction": "Explain dropout",
+    "output": "Dropout randomly deactivates neurons during training to prevent overfitting.",
+    "url": "https://example.com/dropout",
+    "score": 82
+  },
+  {
+    "instruction": "What is regularization?",
+    "output": "Regularization techniques prevent overfitting by adding penalties to model complexity.",
+    "url": "https://example.com/reg",
+    "score": 77
+  },
+  {
+    "instruction": "Define learning rate",
+    "output": "Learning rate controls how much model weights are updated during training.",
+    "url": "https://example.com/lr",
+    "score": 85
+  },
+  {
+    "instruction": "What is SGD?",
+    "output": "Stochastic Gradient Descent updates weights using random subsets of data.",
+    "url": "https://example.com/sgd",
+    "score": 73
+  },
+  {
+    "instruction": "Explain Adam optimizer",
+    "output": "Adam combines momentum and adaptive learning rates for efficient optimization.",
+    "url": "https://example.com/adam",
+    "score": 91
+  },
+  {
+    "instruction": "What is cross-validation?",
+    "output": "Cross-validation evaluates model performance by splitting data into multiple folds.",
+    "url": "https://example.com/cv",
+    "score": 80
+  },
+  {
+    "instruction": "Define precision",
+    "output": "Precision is the ratio of true positives to all predicted positives.",
+    "url": "https://example.com/precision",
+    "score": 68
+  },
+  {
+    "instruction": "What is recall?",
+    "output": "Recall is the ratio of true positives to all actual positives.",
+    "url": "https://example.com/recall",
+    "score": 67
+  },
+  {
+    "instruction": "Explain F1 score",
+    "output": "F1 score is the harmonic mean of precision and recall.",
+    "url": "https://example.com/f1",
+    "score": 75
+  },
+  {
+    "instruction": "What is AUC?",
+    "output": "AUC represents the area under the ROC curve, measuring classifier performance.",
+    "url": "https://example.com/auc",
+    "score": 83
+  }
+]

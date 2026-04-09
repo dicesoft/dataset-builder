@@ -1,0 +1,14 @@
+title: dataset-builder
+description: CLI tool for building ML/LLM datasets via scraping, synthetic generation, importing, cleaning, formatting, and transformation.
+
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: custom
+
+search_enabled: true
+
+aux_links:
+  "GitHub":
+    - "https://github.com/3koozy/dataset-builder"
+
+footer_content: "MIT License &copy; 2026 3koozy"

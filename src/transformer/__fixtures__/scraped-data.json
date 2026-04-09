@@ -1,0 +1,47 @@
+{
+  "taskId": "task_test_1234567890_abc123",
+  "searchQuery": "sports cars",
+  "generatedAt": "2026-02-27T10:00:00.000Z",
+  "pages": [
+    {
+      "id": "page_001",
+      "source_url": "https://example.com/cars/sports",
+      "title": "Sports Cars: A Complete Guide",
+      "text": "Sports cars are designed for performance and speed. They typically have two seats, powerful engines, and aerodynamic bodies.\n\nPopular models include the Porsche 911, Ferrari 488, and Lamborghini Huracán. These vehicles prioritize handling and acceleration over comfort and cargo space.",
+      "links": ["https://example.com/cars/types"],
+      "files": ["https://example.com/images/car1.jpg"],
+      "crawled_at": "2026-02-27T10:00:00.000Z",
+      "depth": 0
+    },
+    {
+      "id": "page_002",
+      "source_url": "https://example.com/cars/electric",
+      "title": "Electric Sports Cars: The Future",
+      "text": "Electric sports cars are revolutionizing the industry. With instant torque from electric motors, they can accelerate faster than traditional gas-powered cars.\n\nThe Tesla Roadster and Rimac Nevera are leading examples of high-performance electric vehicles.",
+      "links": [],
+      "files": [],
+      "crawled_at": "2026-02-27T10:01:00.000Z",
+      "depth": 1
+    },
+    {
+      "id": "page_003",
+      "source_url": "https://example.com/cars/classic",
+      "title": "Classic Sports Cars",
+      "text": "Classic sports cars from the 1960s and 70s remain highly collectible. The Ford Mustang, Chevrolet Corvette, and Jaguar E-Type defined an era of automotive excellence.",
+      "links": [],
+      "files": [],
+      "crawled_at": "2026-02-27T10:02:00.000Z",
+      "depth": 1
+    },
+    {
+      "id": "page_004",
+      "source_url": "https://example.com/short",
+      "title": "Short",
+      "text": "Too short.",
+      "links": [],
+      "files": [],
+      "crawled_at": "2026-02-27T10:03:00.000Z",
+      "depth": 0
+    }
+  ]
+}

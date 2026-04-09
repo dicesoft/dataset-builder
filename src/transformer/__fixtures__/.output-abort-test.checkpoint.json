@@ -1,0 +1,68 @@
+{
+  "taskId": "transform_1775591499734_q9gfc3",
+  "inputPath": "D:\\DiceSoft\\Tools\\dataset-builder\\src\\transformer\\__fixtures__\\scraped-data.json",
+  "template": "text-qa",
+  "options": {
+    "input": "D:\\DiceSoft\\Tools\\dataset-builder\\src\\transformer\\__fixtures__\\scraped-data.json",
+    "template": "text-qa",
+    "output": "D:\\DiceSoft\\Tools\\dataset-builder\\src\\transformer\\__fixtures__\\output-abort-test.json",
+    "relevanceThreshold": 0.5,
+    "batchSize": 10,
+    "minTextLength": 50,
+    "maxTextLength": 10000,
+    "noLlm": true,
+    "dedupe": false,
+    "yes": true
+  },
+  "totalRecords": 4,
+  "completedRecordIds": [
+    "https://example.com/cars/sports",
+    "https://example.com/cars/electric",
+    "https://example.com/cars/classic"
+  ],
+  "failedRecordIds": [],
+  "outputPath": "D:\\DiceSoft\\Tools\\dataset-builder\\src\\transformer\\__fixtures__\\output-abort-test.json",
+  "partialResults": [
+    {
+      "instruction": "What is Sports Cars: A Complete Guide?",
+      "output": "Sports cars are designed for performance and speed. They typically have two seats, powerful engines, and aerodynamic bodies.",
+      "source_url": "https://example.com/cars/sports",
+      "title": "Sports Cars: A Complete Guide",
+      "_meta": {
+        "sourceUrl": "https://example.com/cars/sports",
+        "sourceTitle": "Sports Cars: A Complete Guide",
+        "template": "text-qa",
+        "processedAt": "2026-04-07T19:51:39.735Z",
+        "generationMethod": "deterministic"
+      }
+    },
+    {
+      "instruction": "What is Electric Sports Cars: The Future?",
+      "output": "Electric sports cars are revolutionizing the industry. With instant torque from electric motors, they can accelerate faster than traditional gas-powered cars.",
+      "source_url": "https://example.com/cars/electric",
+      "title": "Electric Sports Cars: The Future",
+      "_meta": {
+        "sourceUrl": "https://example.com/cars/electric",
+        "sourceTitle": "Electric Sports Cars: The Future",
+        "template": "text-qa",
+        "processedAt": "2026-04-07T19:51:39.735Z",
+        "generationMethod": "deterministic"
+      }
+    },
+    {
+      "instruction": "What is Classic Sports Cars?",
+      "output": "Classic sports cars from the 1960s and 70s remain highly collectible. The Ford Mustang, Chevrolet Corvette, and Jaguar E-Type defined an era of automotive excellence.",
+      "source_url": "https://example.com/cars/classic",
+      "title": "Classic Sports Cars",
+      "_meta": {
+        "sourceUrl": "https://example.com/cars/classic",
+        "sourceTitle": "Classic Sports Cars",
+        "template": "text-qa",
+        "processedAt": "2026-04-07T19:51:39.735Z",
+        "generationMethod": "deterministic"
+      }
+    }
+  ],
+  "startedAt": "2026-04-07T19:51:39.735Z",
+  "lastUpdatedAt": "2026-04-07T19:51:39.735Z"
+}

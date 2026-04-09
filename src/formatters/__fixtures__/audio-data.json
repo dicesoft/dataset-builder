@@ -1,0 +1,35 @@
+[
+  {
+    "audio": "audio/speech_01.wav",
+    "text": "Hello, how are you today?",
+    "label": "greeting",
+    "duration": 2.5
+  },
+  {
+    "audio": "audio/speech_02.mp3",
+    "text": "The weather is nice outside.",
+    "label": "statement",
+    "duration": 3.1
+  },
+  {
+    "audio": "audio/speech_03.flac",
+    "text": "Can you help me with this problem?",
+    "label": "question",
+    "duration": 4.0
+  },
+  { "audio": "audio/music_04.wav", "label": "classical", "duration": 180.0 },
+  { "audio": "audio/music_05.mp3", "label": "jazz", "duration": 240.5 },
+  {
+    "audio": "audio/speech_06.wav",
+    "text": "Thank you for your assistance.",
+    "label": "gratitude",
+    "duration": 2.8
+  },
+  {
+    "audio": "audio/speech_07.ogg",
+    "text": "Please repeat that again.",
+    "label": "request",
+    "duration": 1.9
+  },
+  { "audio": "audio/noise_08.wav", "label": "noise", "duration": 5.0 }
+]

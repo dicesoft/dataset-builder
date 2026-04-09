@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#g2)" stroke="url(#g1)" stroke-width="3"/>
+  <!-- Stacked database layers -->
+  <g transform="translate(64, 42)">
+    <ellipse cx="0" cy="0" rx="28" ry="10" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+    <path d="M-28 0 v14 c0 5.5 12.5 10 28 10 s28-4.5 28-10 v-14" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+    <path d="M-28 14 v14 c0 5.5 12.5 10 28 10 s28-4.5 28-10 v-14" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+    <path d="M-28 28 v14 c0 5.5 12.5 10 28 10 s28-4.5 28-10 v-14" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+  </g>
+  <!-- Small arrow/spark at bottom right -->
+  <path d="M88 78 l12 0 l-4-4 m4 4 l-4 4" stroke="#22d3ee" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

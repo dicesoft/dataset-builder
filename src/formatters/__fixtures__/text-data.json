@@ -1,0 +1,106 @@
+[
+  {
+    "instruction": "What is machine learning?",
+    "input": "",
+    "output": "Machine learning is a subset of AI that enables systems to learn from data."
+  },
+  {
+    "instruction": "Explain neural networks",
+    "input": "In the context of deep learning",
+    "output": "Neural networks are computing systems inspired by biological neural networks."
+  },
+  {
+    "instruction": "What is NLP?",
+    "output": "Natural Language Processing is a field of AI focused on human language."
+  },
+  {
+    "instruction": "Define reinforcement learning",
+    "input": "",
+    "output": "RL is a type of ML where an agent learns by interacting with an environment."
+  },
+  {
+    "instruction": "What is transfer learning?",
+    "output": "Transfer learning applies knowledge from one task to improve learning on another."
+  },
+  {
+    "instruction": "Explain backpropagation",
+    "input": "How does it work?",
+    "output": "Backpropagation computes gradients of the loss function with respect to each weight."
+  },
+  {
+    "instruction": "What is a GAN?",
+    "output": "A Generative Adversarial Network consists of a generator and discriminator competing."
+  },
+  {
+    "instruction": "Describe attention mechanisms",
+    "input": "In transformers",
+    "output": "Attention allows models to focus on relevant parts of the input sequence."
+  },
+  {
+    "instruction": "What is fine-tuning?",
+    "output": "Fine-tuning adapts a pre-trained model to a specific downstream task."
+  },
+  {
+    "instruction": "Explain gradient descent",
+    "input": "",
+    "output": "Gradient descent is an optimization algorithm that minimizes loss functions iteratively."
+  },
+  {
+    "messages": [
+      { "role": "system", "content": "You are a helpful assistant." },
+      { "role": "user", "content": "What is Python?" },
+      { "role": "assistant", "content": "Python is a high-level programming language." }
+    ]
+  },
+  {
+    "messages": [
+      { "role": "user", "content": "Explain recursion" },
+      { "role": "assistant", "content": "Recursion is when a function calls itself." },
+      { "role": "user", "content": "Give an example" },
+      { "role": "assistant", "content": "Factorial: f(n) = n * f(n-1), base case f(0) = 1." }
+    ]
+  },
+  {
+    "conversations": [
+      { "from": "human", "value": "What is Docker?" },
+      { "from": "gpt", "value": "Docker is a platform for containerizing applications." }
+    ]
+  },
+  {
+    "conversations": [
+      { "from": "system", "value": "You are a DevOps expert." },
+      { "from": "human", "value": "Explain CI/CD" },
+      { "from": "gpt", "value": "CI/CD automates code integration, testing, and deployment." },
+      { "from": "human", "value": "What tools are common?" },
+      {
+        "from": "gpt",
+        "value": "Jenkins, GitHub Actions, GitLab CI, and CircleCI are popular choices."
+      }
+    ]
+  },
+  { "question": "What is TypeScript?", "answer": "TypeScript adds static typing to JavaScript." },
+  {
+    "prompt": "Summarize deep learning",
+    "completion": "Deep learning uses multi-layer neural networks for complex pattern recognition."
+  },
+  {
+    "text": "The transformer architecture revolutionized NLP by enabling parallel processing of sequences.",
+    "role": "prompter",
+    "message_id": "msg_001",
+    "parent_id": null
+  },
+  {
+    "text": "Yes, self-attention allows the model to weigh the importance of different tokens.",
+    "role": "assistant",
+    "message_id": "msg_002",
+    "parent_id": "msg_001"
+  },
+  {
+    "q": "What is overfitting?",
+    "a": "When a model performs well on training data but poorly on unseen data."
+  },
+  {
+    "input_text": "Explain batch normalization",
+    "output_text": "Batch normalization normalizes layer inputs to stabilize and speed up training."
+  }
+]

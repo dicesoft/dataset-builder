@@ -1,0 +1,30 @@
+{
+  "qa-to-alpaca": {
+    "instruction": "{{question}}",
+    "input": "",
+    "output": "{{answer}}"
+  },
+  "prompt-completion-to-alpaca": {
+    "instruction": "{{prompt}}",
+    "input": "",
+    "output": "{{completion}}"
+  },
+  "nested-paths": {
+    "instruction": "{{meta.title}}",
+    "input": "{{meta.context}}",
+    "output": "{{content.body}}"
+  },
+  "composite-template": {
+    "instruction": "{{first_name}} {{last_name}}: {{question}}",
+    "output": "{{answer}}"
+  },
+  "web-scrape-to-alpaca": {
+    "instruction": "Summarize the following article: {{title}}",
+    "input": "{{body}}",
+    "output": "{{summary}}"
+  },
+  "csv-columns-to-chatml": {
+    "instruction": "{{col_a}}",
+    "output": "{{col_b}}"
+  }
+}

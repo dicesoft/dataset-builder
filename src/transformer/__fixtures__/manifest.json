@@ -1,0 +1,129 @@
+{
+  "taskId": "task_test_images_1234567890_xyz789",
+  "searchQuery": "luxury cars",
+  "generatedAt": "2026-02-27T11:00:00.000Z",
+  "totalAssets": 5,
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "asset_0",
+      "sourceUrl": "https://example.com/images/ferrari-488.jpg",
+      "sourcePageUrl": "https://example.com/cars/ferrari",
+      "sourcePageTitle": "Ferrari 488 GTB Review",
+      "localPath": "downloads/images/ferrari-488.jpg",
+      "fileName": "ferrari-488.jpg",
+      "fileType": "image",
+      "fileSize": 125000,
+      "status": "completed",
+      "downloadedAt": "2026-02-27T11:00:00.000Z",
+      "duration": 500,
+      "context": {
+        "altText": "Red Ferrari 488 GTB parked on a street",
+        "surroundingText": "The Ferrari 488 GTB is a masterpiece of engineering",
+        "pageDepth": 0,
+        "tags": ["ferrari", "488", "gtb", "review"]
+      },
+      "relevance": {
+        "score": null,
+        "matchesTarget": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "asset_1",
+      "sourceUrl": "https://example.com/images/lamborghini-huracan.jpg",
+      "sourcePageUrl": "https://example.com/cars/lamborghini",
+      "sourcePageTitle": "Lamborghini Huracán Overview",
+      "localPath": "downloads/images/lamborghini-huracan.jpg",
+      "fileName": "lamborghini-huracan.jpg",
+      "fileType": "image",
+      "fileSize": 180000,
+      "status": "completed",
+      "downloadedAt": "2026-02-27T11:00:00.000Z",
+      "duration": 600,
+      "context": {
+        "altText": "Yellow Lamborghini Huracán on a track",
+        "surroundingText": "The Huracán delivers raw power",
+        "pageDepth": 0,
+        "tags": ["lamborghini", "huracan", "track"]
+      },
+      "relevance": {
+        "score": null,
+        "matchesTarget": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "asset_2",
+      "sourceUrl": "https://example.com/images/porsche-911.jpg",
+      "sourcePageUrl": "https://example.com/cars/porsche",
+      "sourcePageTitle": "Porsche 911 Carrera",
+      "localPath": "downloads/images/porsche-911.jpg",
+      "fileName": "porsche-911.jpg",
+      "fileType": "image",
+      "fileSize": 150000,
+      "status": "completed",
+      "downloadedAt": "2026-02-27T11:00:00.000Z",
+      "duration": 550,
+      "context": {
+        "altText": "Silver Porsche 911 Carrera",
+        "surroundingText": "The iconic 911 continues to evolve",
+        "pageDepth": 1,
+        "tags": ["porsche", "911", "carrera"]
+      },
+      "relevance": {
+        "score": null,
+        "matchesTarget": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "asset_3",
+      "sourceUrl": "https://example.com/images/icon.svg",
+      "sourcePageUrl": "https://example.com/",
+      "sourcePageTitle": "Home Page",
+      "localPath": "downloads/images/icon.svg",
+      "fileName": "icon.svg",
+      "fileType": "image",
+      "fileSize": 2000,
+      "status": "completed",
+      "downloadedAt": "2026-02-27T11:00:00.000Z",
+      "duration": 100,
+      "context": {
+        "altText": "Site logo",
+        "surroundingText": "",
+        "pageDepth": 0,
+        "tags": []
+      },
+      "relevance": {
+        "score": null,
+        "matchesTarget": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "asset_4",
+      "sourceUrl": "https://example.com/images/broken.jpg",
+      "sourcePageUrl": "https://example.com/404",
+      "sourcePageTitle": "Error Page",
+      "localPath": "",
+      "fileName": "broken.jpg",
+      "fileType": "image",
+      "fileSize": 0,
+      "status": "failed",
+      "downloadedAt": "2026-02-27T11:00:00.000Z",
+      "duration": 0,
+      "context": {
+        "altText": null,
+        "surroundingText": "",
+        "pageDepth": 0,
+        "tags": []
+      },
+      "relevance": {
+        "score": null,
+        "matchesTarget": null,
+        "reason": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "image": "images/cat_01.jpg",
+    "label": "cat",
+    "caption": "A tabby cat sitting on a windowsill"
+  },
+  { "image": "images/dog_02.jpg", "label": "dog", "caption": "A golden retriever playing fetch" },
+  { "image": "images/cat_03.png", "label": "cat", "caption": "A black cat sleeping on a couch" },
+  { "image": "images/bird_04.jpg", "label": "bird", "caption": "A blue jay perched on a branch" },
+  {
+    "image": "images/dog_05.jpg",
+    "label": "dog",
+    "bbox": [100, 150, 200, 300],
+    "category_id": 1,
+    "category": "dog"
+  },
+  {
+    "image": "images/cat_06.jpg",
+    "label": "cat",
+    "bbox": [50, 75, 180, 250],
+    "category_id": 0,
+    "category": "cat"
+  },
+  {
+    "image": "images/car_07.png",
+    "label": "car",
+    "bbox": [10, 20, 400, 300],
+    "category_id": 2,
+    "category": "car"
+  },
+  {
+    "image": "images/street_08.jpg",
+    "conversations": [
+      { "from": "human", "value": "What do you see in this image?" },
+      { "from": "gpt", "value": "I see a busy street with cars and pedestrians." }
+    ]
+  },
+  {
+    "image": "images/food_09.jpg",
+    "conversations": [
+      { "from": "human", "value": "Describe this dish" },
+      { "from": "gpt", "value": "This appears to be a pasta dish with tomato sauce and basil." }
+    ]
+  },
+  {
+    "image": "images/flower_10.jpg",
+    "label": "flower",
+    "caption": "A red rose in a garden",
+    "width": 640,
+    "height": 480
+  }
+]

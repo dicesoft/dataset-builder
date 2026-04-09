@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "text": "Machine learning is transforming industries.",
+    "category": "tech",
+    "score": 0.95,
+    "tags": ["ml", "ai"]
+  },
+  {
+    "id": 2,
+    "text": "Climate change requires urgent global action.",
+    "category": "science",
+    "score": 0.88,
+    "tags": ["climate", "environment"]
+  },
+  {
+    "id": 3,
+    "text": "The stock market showed gains today.",
+    "category": "finance",
+    "score": 0.72,
+    "tags": ["stocks", "market"]
+  },
+  {
+    "id": 4,
+    "text": "New research on quantum computing published.",
+    "category": "tech",
+    "score": 0.91,
+    "tags": ["quantum", "computing"]
+  },
+  {
+    "id": 5,
+    "text": "Renewable energy adoption increases globally.",
+    "category": "science",
+    "score": 0.85,
+    "tags": ["energy", "renewable"]
+  },
+  {
+    "id": 6,
+    "text": "AI regulation debates intensify in Congress.",
+    "category": "politics",
+    "score": 0.79,
+    "tags": ["ai", "regulation"]
+  },
+  {
+    "id": 7,
+    "text": "Healthcare innovations using deep learning.",
+    "category": "tech",
+    "score": 0.93,
+    "tags": ["health", "ai"]
+  },
+  {
+    "id": 8,
+    "text": "Space exploration milestones this year.",
+    "category": "science",
+    "score": 0.87,
+    "tags": ["space", "exploration"]
+  },
+  {
+    "id": 9,
+    "text": "Cybersecurity threats on the rise.",
+    "category": "tech",
+    "score": 0.82,
+    "tags": ["security", "cyber"]
+  },
+  {
+    "id": 10,
+    "text": "Economic outlook for emerging markets.",
+    "category": "finance",
+    "score": 0.68,
+    "tags": ["economy", "markets"]
+  },
+  {
+    "id": 11,
+    "text": "Advancements in natural language processing.",
+    "category": "tech",
+    "score": 0.96,
+    "tags": ["nlp", "ai"]
+  },
+  {
+    "id": 12,
+    "text": "Biodiversity conservation efforts expand.",
+    "category": "science",
+    "score": 0.84,
+    "tags": ["biodiversity", "conservation"]
+  },
+  {
+    "id": 13,
+    "text": "Cryptocurrency regulations tighten.",
+    "category": "finance",
+    "score": 0.71,
+    "tags": ["crypto", "regulation"]
+  },
+  {
+    "id": 14,
+    "text": "Robotics in manufacturing grows rapidly.",
+    "category": "tech",
+    "score": 0.89,
+    "tags": ["robotics", "manufacturing"]
+  },
+  {
+    "id": 15,
+    "text": "Ocean pollution reaches critical levels.",
+    "category": "science",
+    "score": 0.76,
+    "tags": ["ocean", "pollution"]
+  }
+]

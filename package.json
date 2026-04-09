@@ -1,0 +1,80 @@
+{
+  "name": "dataset-builder",
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "CLI tool for building datasets through synthetic data generation, web scraping, and data sanitization. Supports text, images, videos, CSV, and numeric data for ML/LLM applications.",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "dataset-builder": "dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/cli/index.ts",
+    "build": "tsc && node scripts/write-build-info.mjs",
+    "start": "node dist/cli/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky",
+    "validate:formats": "npx tsx scripts/validate-format-compliance.ts",
+    "benchmark:formatters": "npx tsx scripts/benchmark-formatters.ts",
+    "validate:hf": "bash scripts/validate-hf-loading.sh",
+    "dev:web": "concurrently \"npm run start:web\" \"npm run --workspace=packages/dashboard dev\"",
+    "build:web": "npm run build && npm run --workspace=packages/dashboard build",
+    "start:web": "node dist/server/index.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^25.3.0",
+    "@types/papaparse": "^5.5.2",
+    "@types/xml2js": "^0.4.14",
+    "@vitest/coverage-v8": "^4.0.18",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@dsnp/parquetjs": "^1.8.7",
+    "@faker-js/faker": "^10.3.0",
+    "@fastify/cors": "^10.1.0",
+    "@fastify/multipart": "^9.4.0",
+    "@fastify/static": "^8.2.0",
+    "@fastify/websocket": "^11.1.0",
+    "@types/ora": "^3.1.0",
+    "chalk": "^5.6.2",
+    "cheerio": "^1.2.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^14.0.3",
+    "conf": "^10.2.0",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.3.1",
+    "fastify": "^5.3.3",
+    "fastify-plugin": "^5.1.0",
+    "mathjs": "^12.4.3",
+    "ollama": "^0.5.14",
+    "ora": "^9.3.0",
+    "papaparse": "^5.5.3",
+    "xlsx": "^0.18.5",
+    "xml2js": "^0.6.2",
+    "zod": "^4.3.6"
+  }
+}
